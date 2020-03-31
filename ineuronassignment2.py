@@ -58,24 +58,24 @@ for s in filtered:
 #########
 lst = "ACADGILD"
 alphabet_list = [ alphabet for alphabet in lst ]
-print ("ACADGILD == " + str(alphabet_list))
+print ("ACADGILD => " + str(alphabet_list))
 
 
 given_lst = ['x','y','z']
 result = [ item*num for item in given_lst for num in range(1,5)  ]
-print("['x','y','z'] == " +   str(result))
+print("['x','y','z'] => " +   str(result))
 
 
 #new_list = ['x','y','z']
 result = [ item*num for num in range(1,5) for item in given_lst  ]
-print("['x','y','z'] == " +   str(result))
+print("['x','y','z'] = " +   str(result))
 
 
 
 #########
 input_list = [2,3,4]
 result = [ [item+num] for item in input_list for num in range(0,3)]
-print("[2,3,4] ==" +  str(result))
+print("[2,3,4] =" +  str(result))
 
 #########
 input_list = [2,3,4,5]
@@ -162,17 +162,13 @@ print(result)
 #a vowel, False otherwise
 
 vowels = ['a','e','i','o','u']
-
 def check_SingleCharacter_Volwel(c):
-
-    if len(c)<1 :
-        if c in vowels:
-            print("true")
-        else:
-            print("false")
-    else:
-        print("please provide single charachter")
-    
-   
-check_SingleCharacter_Volwel('ab')    
+    if(len(c)<2):
+      #vowel_present = [bool(x==c) if x == c else bool(x==c) for x in vowels]
+       if c in vowels:
+           print('true')
+       
+       # if(vowels.
+        
+check_SingleCharacter_Volwel('p')    
     
